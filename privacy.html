@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Unicorn Color Hub</title>
+  <meta name="description" content="Privacy Policy for Unicorn Color Hub. Learn how we use cookies and third-party ads." />
+  <meta property="og:title" content="Privacy Policy - Unicorn Color Hub" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Unicorn Color Hub" />
+  <link rel="canonical" href="https://unicorncolorhub.com/privacy.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F984;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">&#x1F984;</span>
+        <span class="brand-text">
+          <strong>Unicorn Color Hub</strong>
+          <small>Free Printable Coloring Pages</small>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: <strong>2026-01-25</strong></p>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <h3 style="margin-top:0;">1) Overview</h3>
+        <p class="muted">
+          Unicorn Color Hub (&#8220;we&#8221;, &#8220;our&#8221;, &#8220;this website&#8221;) provides free printable coloring pages.
+          This Privacy Policy explains what information may be collected when you use our website and how it may be used.
+        </p>
+
+        <h3>2) Information we collect</h3>
+        <p class="muted">
+          We do not ask you to create an account. However, some information may be collected automatically by your browser,
+          web hosting provider, analytics tools, or advertising partners.
+        </p>
+        <ul class="muted">
+          <li><strong>Log data:</strong> IP address, browser type, device info, pages visited, and timestamps.</li>
+          <li><strong>Cookies:</strong> small files used to remember preferences and support ads/analytics.</li>
+        </ul>
+
+        <h3>3) Cookies &amp; advertising</h3>
+        <p class="muted">
+          We may show ads (for example, Google AdSense). Advertising partners may use cookies or similar technologies
+          to display relevant ads, measure ad performance, and limit repeated ads.
+        </p>
+
+        <h3>4) Third-party services</h3>
+        <p class="muted">
+          Third parties (such as ad networks and analytics providers) may collect information directly from your browser.
+          Their data collection is governed by their own privacy policies.
+        </p>
+
+        <h3>5) How we use information</h3>
+        <ul class="muted">
+          <li>To keep the website running and secure.</li>
+          <li>To understand which pages are popular and improve the website.</li>
+          <li>To support advertising (if enabled) and measure performance.</li>
+        </ul>
+
+        <h3>6) Your choices</h3>
+        <ul class="muted">
+          <li>You can disable cookies in your browser settings. Some features may work differently.</li>
+          <li>If ads are enabled, you may be able to manage ad personalization settings through the ad provider.</li>
+        </ul>
+
+        <h3>7) Children&#8217;s privacy</h3>
+        <p class="muted">
+          Our coloring pages are designed for kids, but this website is intended to be used by parents/guardians and teachers.
+          We do not knowingly collect personal information from children.
+          If you believe a child has provided personal information, please contact us to request deletion.
+        </p>
+
+        <h3>8) Downloads (PDF/PNG)</h3>
+        <p class="muted">
+          When you download files (PDF/PNG), the website may record basic download logs (for example, file requested and time)
+          for security and performance reasons.
+        </p>
+
+        <h3>9) Changes to this policy</h3>
+        <p class="muted">
+          We may update this Privacy Policy from time to time. Any updates will be posted on this page with a new &#8220;Last updated&#8221; date.
+        </p>
+
+        <h3>10) Contact</h3>
+        <p class="muted">
+          If you have questions about this Privacy Policy, contact us here:
+          <a href="contact.html"><strong>Contact Page</strong></a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unicorn Color Hub &#8226; Free printable coloring pages.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container cookie-inner">
+      <p>We use cookies to improve your experience and support ads. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-btns">
+        <button class="accept-btn" id="cookieAccept">Accept</button>
+        <button class="decline-btn" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", o); });
+    document.addEventListener("click", (e) => { if (!nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); }});
+    const btt = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => btt.classList.toggle("show", window.scrollY > 400), { passive: true });
+    btt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    (function(){const b=document.getElementById("cookieBanner");if(!localStorage.getItem("cookie_consent"))setTimeout(()=>b.classList.add("show"),1200);document.getElementById("cookieAccept").addEventListener("click",()=>{localStorage.setItem("cookie_consent","accepted");b.classList.remove("show")});document.getElementById("cookieDecline").addEventListener("click",()=>{localStorage.setItem("cookie_consent","declined");b.classList.remove("show")})})();
+  </script>
+</body>
+</html>

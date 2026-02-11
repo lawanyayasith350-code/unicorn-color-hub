@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Unicorn Color Hub</title>
+  <meta name="description" content="Contact Unicorn Color Hub. Get help with downloads or request new unicorn coloring pages." />
+  <meta property="og:title" content="Contact - Unicorn Color Hub" />
+  <meta property="og:description" content="Get help with downloads or request new unicorn coloring pages." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Unicorn Color Hub" />
+  <link rel="canonical" href="https://unicorncolorhub.com/contact.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F984;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">&#x1F984;</span>
+        <span class="brand-text">
+          <strong>Unicorn Color Hub</strong>
+          <small>Free Printable Coloring Pages</small>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Contact</h1>
+        <p>Need help or want to request a new unicorn page?</p>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <h3 style="margin-top:0;">Send us a message</h3>
+        <p class="muted">
+          Need help with downloads or want to request a new unicorn page? Fill this form.
+        </p>
+
+        <!-- Netlify Form -->
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label>Your name</label>
+          <input type="text" name="name" required placeholder="Jane Doe" />
+
+          <label>Your email</label>
+          <input type="email" name="email" required placeholder="jane@example.com" />
+
+          <label>Message</label>
+          <textarea name="message" rows="6" required placeholder="Tell us what you need..."></textarea>
+
+          <button class="btn primary" type="submit" style="margin-top:16px;">Send Message</button>
+        </form>
+
+        <div class="note" style="margin-top:16px;">
+          <strong>Tip:</strong> Include the page name (example: &#8220;Cute #012&#8221;) when reporting an issue.
+        </div>
+
+        <h3 style="margin-top:18px;">Common help</h3>
+        <ul class="muted">
+          <li><strong>Downloads not opening?</strong> Try right-click &#8594; &#8220;Open link in new tab&#8221;.</li>
+          <li><strong>Print size issue?</strong> Choose &#8220;Actual size&#8221; (100%) when printing PDF.</li>
+          <li><strong>Want a new style?</strong> Tell us: category + difficulty + idea (example: &#8220;Baby unicorn with teddy bear&#8221;).</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unicorn Color Hub &#8226; Free printable coloring pages.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container cookie-inner">
+      <p>We use cookies to improve your experience and support ads. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-btns">
+        <button class="accept-btn" id="cookieAccept">Accept</button>
+        <button class="decline-btn" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", o); });
+    document.addEventListener("click", (e) => { if (!nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); }});
+    const btt = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => btt.classList.toggle("show", window.scrollY > 400), { passive: true });
+    btt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    (function(){const b=document.getElementById("cookieBanner");if(!localStorage.getItem("cookie_consent"))setTimeout(()=>b.classList.add("show"),1200);document.getElementById("cookieAccept").addEventListener("click",()=>{localStorage.setItem("cookie_consent","accepted");b.classList.remove("show")});document.getElementById("cookieDecline").addEventListener("click",()=>{localStorage.setItem("cookie_consent","declined");b.classList.remove("show")})})();
+  </script>
+</body>
+</html>

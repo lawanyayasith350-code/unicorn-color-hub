@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Unicorn Color Hub</title>
+  <meta name="description" content="About Unicorn Color Hub. Free printable unicorn coloring pages for kids aged 4-10. Download A4 PDF and high-res PNG." />
+  <meta property="og:title" content="About - Unicorn Color Hub" />
+  <meta property="og:description" content="Learn about Unicorn Color Hub - free printable unicorn coloring pages for kids." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Unicorn Color Hub" />
+  <link rel="canonical" href="https://unicorncolorhub.com/about.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F984;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">&#x1F984;</span>
+        <span class="brand-text">
+          <strong>Unicorn Color Hub</strong>
+          <small>Free Printable Coloring Pages</small>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html" class="active">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>About Unicorn Color Hub</h1>
+        <p>Free printable unicorn coloring pages for kids (4&#8211;10).</p>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <h3 style="margin-top:0;">What is this site?</h3>
+        <p class="muted">
+          Unicorn Color Hub is a simple website where you can download cute unicorn coloring pages.
+          Every page is designed with thick, clean outlines and large open areas so kids can color easily.
+        </p>
+
+        <h3>What you can download</h3>
+        <ul class="muted">
+          <li><strong>PDF (A4):</strong> best for printing</li>
+          <li><strong>PNG (High-Res):</strong> good for tablets or digital coloring apps</li>
+        </ul>
+
+        <h3>Usage rules (important)</h3>
+        <p class="muted">
+          We want these pages to be easy and safe to use. Please follow these rules:
+        </p>
+        <ul class="muted">
+          <li><strong>Allowed:</strong> personal use at home, classroom use, and activities with kids.</li>
+          <li><strong>Not allowed:</strong> selling these files, re-uploading them to other sites, or claiming them as your own.</li>
+          <li><strong>Sharing:</strong> you may share a link to our website (best option).</li>
+        </ul>
+
+        <h3>Print tips</h3>
+        <ul class="muted">
+          <li>Print in black &amp; white on A4 paper.</li>
+          <li>If lines look light, increase printer &#8220;darkness&#8221; or &#8220;contrast&#8221; settings.</li>
+          <li>For best results, use plain white paper (80&#8211;100gsm).</li>
+        </ul>
+
+        <h3>Contact</h3>
+        <p class="muted">
+          Need help or want to request a new unicorn style?
+          Visit our <a href="contact.html"><strong>Contact page</strong></a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unicorn Color Hub &#8226; Free printable coloring pages.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container cookie-inner">
+      <p>We use cookies to improve your experience and support ads. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-btns">
+        <button class="accept-btn" id="cookieAccept">Accept</button>
+        <button class="decline-btn" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", o); });
+    document.addEventListener("click", (e) => { if (!nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); }});
+    const btt = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => btt.classList.toggle("show", window.scrollY > 400), { passive: true });
+    btt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    (function(){const b=document.getElementById("cookieBanner");if(!localStorage.getItem("cookie_consent"))setTimeout(()=>b.classList.add("show"),1200);document.getElementById("cookieAccept").addEventListener("click",()=>{localStorage.setItem("cookie_consent","accepted");b.classList.remove("show")});document.getElementById("cookieDecline").addEventListener("click",()=>{localStorage.setItem("cookie_consent","declined");b.classList.remove("show")})})();
+  </script>
+</body>
+</html>

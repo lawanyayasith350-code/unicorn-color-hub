@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms &amp; Usage - Unicorn Color Hub</title>
+  <meta name="description" content="Terms and usage rules for Unicorn Color Hub printable unicorn coloring pages." />
+  <meta property="og:title" content="Terms &amp; Usage - Unicorn Color Hub" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Unicorn Color Hub" />
+  <link rel="canonical" href="https://unicorncolorhub.com/terms.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F984;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">&#x1F984;</span>
+        <span class="brand-text">
+          <strong>Unicorn Color Hub</strong>
+          <small>Free Printable Coloring Pages</small>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html" class="active">Terms</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Terms &amp; Usage</h1>
+        <p>Simple rules so everyone can use these pages safely.</p>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <h3 style="margin-top:0;">1) Free downloads</h3>
+        <p class="muted">
+          Unicorn Color Hub provides free printable coloring pages in PDF (A4) and high-resolution PNG format.
+          You may download and print these files for personal and classroom use.
+        </p>
+
+        <h3>2) Allowed use</h3>
+        <ul class="muted">
+          <li>Printing at home for kids and family.</li>
+          <li>Classroom use by teachers (printing for students).</li>
+          <li>Personal digital coloring on tablets (PNG).</li>
+        </ul>
+
+        <h3>3) Not allowed</h3>
+        <ul class="muted">
+          <li><strong>No reselling</strong> (do not sell PDFs/PNGs or printed copies).</li>
+          <li><strong>No re-uploading</strong> to other websites, apps, or marketplaces.</li>
+          <li><strong>No claiming ownership</strong> or removing credits (if any are added later).</li>
+          <li>No using our files as part of a paid bundle or subscription.</li>
+        </ul>
+
+        <h3>4) Sharing</h3>
+        <p class="muted">
+          You are welcome to share our website link with friends or on social media.
+          Please share the link instead of uploading the files elsewhere.
+        </p>
+
+        <h3>5) Disclaimer</h3>
+        <p class="muted">
+          Downloads are provided &#8220;as is&#8221;. We do our best to keep files working, but we cannot guarantee
+          every printer/device will behave the same. Use at your own discretion.
+        </p>
+
+        <h3>6) Changes</h3>
+        <p class="muted">
+          We may update these Terms from time to time. Updates will be posted on this page.
+        </p>
+
+        <h3>7) Contact</h3>
+        <p class="muted">
+          Questions? Please use our <a href="contact.html"><strong>Contact page</strong></a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unicorn Color Hub &#8226; Free printable coloring pages.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container cookie-inner">
+      <p>We use cookies to improve your experience and support ads. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-btns">
+        <button class="accept-btn" id="cookieAccept">Accept</button>
+        <button class="decline-btn" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", o); });
+    document.addEventListener("click", (e) => { if (!nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); }});
+    const btt = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => btt.classList.toggle("show", window.scrollY > 400), { passive: true });
+    btt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    (function(){const b=document.getElementById("cookieBanner");if(!localStorage.getItem("cookie_consent"))setTimeout(()=>b.classList.add("show"),1200);document.getElementById("cookieAccept").addEventListener("click",()=>{localStorage.setItem("cookie_consent","accepted");b.classList.remove("show")});document.getElementById("cookieDecline").addEventListener("click",()=>{localStorage.setItem("cookie_consent","declined");b.classList.remove("show")})})();
+  </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unicorn Coloring Page (PDF + PNG) - Unicorn Color Hub</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Download this free unicorn coloring page as A4 PDF or high-res PNG. Thick outlines, kid-friendly design for ages 4-10." />
+
+  <meta property="og:title" content="Unicorn Coloring Page - Free PDF &amp; PNG Download" />
+  <meta property="og:description" content="Download this free unicorn coloring page. A4 PDF for printing or high-res PNG for tablets." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Unicorn Color Hub" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F984;</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">&#x1F984;</span>
+        <span class="brand-text">
+          <strong>Unicorn Color Hub</strong>
+          <small>Free Printable Coloring Pages</small>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <div class="breadcrumb">
+        <a href="categories.html">&#8592; Back to Categories</a>
+      </div>
+
+      <div class="page-layout">
+        <!-- Preview -->
+        <div class="preview-card">
+          <div class="preview-head">
+            <h1 id="pageTitle">Cute Unicorn #001</h1>
+            <p id="pageInfo">Free printable &#8226; PDF + PNG</p>
+          </div>
+
+          <img id="previewImg" class="preview-img" src="assets/pages/cute-unicorn-001.png" alt="Unicorn coloring page preview" />
+
+          <div class="note" style="margin-top:14px;">
+            <strong>Printing tips:</strong>
+            For best results, download the A4 PDF and print at 100% (Actual size).
+            These pages are for personal and classroom use only.
+            More pages: <a href="categories.html"><strong>Browse categories</strong></a>.
+          </div>
+
+          <div class="hint">
+            &#x1F4A1; Tip: Print in black &amp; white for best results.
+          </div>
+        </div>
+
+        <!-- Download sidebar -->
+        <aside class="download-card">
+          <h2>Download</h2>
+          <p class="muted">Choose a format. PDF is best for printing.</p>
+
+          <a id="pdfLink" class="btn primary full" href="assets/pdf/cute-unicorn-001.pdf" download>
+            &#x1F4C4; Download PDF (A4)
+          </a>
+          <a id="pngLink" class="btn ghost full" href="assets/pages/cute-unicorn-001.png" download>
+            &#x1F5BC;&#xFE0F; Download PNG (High-Res)
+          </a>
+
+          <div class="small-box">
+            <strong>&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467; For Parents:</strong>
+            <p class="muted">This page is designed for kids (4&#8211;10) with easy lines and large open areas.</p>
+          </div>
+
+          <div class="ad-slot" style="margin-top:16px;">
+            <!-- AdSense code goes here -->
+          </div>
+        </aside>
+      </div>
+
+      <!-- More like this -->
+      <section class="section">
+        <div class="section-head">
+          <h2>More Like This</h2>
+          <p>Open another page quickly.</p>
+        </div>
+        <div class="grid-4" id="moreLikeGrid"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="ad-slot" id="ad-page-bottom"><!-- AdSense --></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unicorn Color Hub &#8226; Free printable coloring pages.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container cookie-inner">
+      <p>We use cookies to improve your experience and support ads. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-btns">
+        <button class="accept-btn" id="cookieAccept">Accept</button>
+        <button class="decline-btn" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", o); });
+    document.addEventListener("click", (e) => { if (!nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); }});
+    const btt = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => btt.classList.toggle("show", window.scrollY > 400), { passive: true });
+    btt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    (function(){const b=document.getElementById("cookieBanner");if(!localStorage.getItem("cookie_consent"))setTimeout(()=>b.classList.add("show"),1200);document.getElementById("cookieAccept").addEventListener("click",()=>{localStorage.setItem("cookie_consent","accepted");b.classList.remove("show")});document.getElementById("cookieDecline").addEventListener("click",()=>{localStorage.setItem("cookie_consent","declined");b.classList.remove("show")})})();
+
+    // Dynamic page loader
+    const params = new URLSearchParams(location.search);
+    const slug  = params.get("slug")  || "cute-unicorn-001";
+    const title = params.get("title") || "Cute Unicorn #001";
+    const imgPath = "assets/pages/" + slug + ".png";
+    const pdfPath = "assets/pdf/" + slug + ".pdf";
+
+    document.getElementById("pageTitle").textContent = title;
+    document.getElementById("previewImg").src = imgPath;
+    document.getElementById("previewImg").alt = title + " coloring page preview";
+    document.getElementById("pngLink").href = imgPath;
+    document.getElementById("pdfLink").href = pdfPath;
+    document.title = title + " Coloring Page (PDF + PNG) - Unicorn Color Hub";
+
+    // More Like This
+    (function () {
+      var grid = document.getElementById("moreLikeGrid");
+      if (!grid) return;
+      var cat = "cute";
+      if (slug.indexOf("princess") === 0) cat = "princess";
+      else if (slug.indexOf("baby") === 0) cat = "baby";
+      var match = slug.match(/(\d+)$/);
+      var currentNum = match ? parseInt(match[1], 10) : 1;
+      var suggestions = [];
+      var offsets = [-2, -1, 1, 2];
+      for (var i = 0; i < offsets.length; i++) {
+        var num = currentNum + offsets[i];
+        if (num < 1) num = 20 + num;
+        if (num > 20) num = num - 20;
+        var pad = String(num).padStart(3, "0");
+        var s = cat + "-unicorn-" + pad;
+        var t = cat.charAt(0).toUpperCase() + cat.slice(1) + " Unicorn #" + pad;
+        suggestions.push({ slug: s, title: t, num: pad });
+      }
+      var html = "";
+      for (var j = 0; j < suggestions.length; j++) {
+        var item = suggestions[j];
+        html += '<a class="thumb" href="page.html?slug=' + item.slug + '&title=' + encodeURIComponent(item.title) + '">' +
+          '<div class="thumb-img"><img src="assets/pages/' + item.slug + '.png" alt="' + item.title + ' thumbnail" loading="lazy"></div>' +
+          '<div class="thumb-meta"><strong>' + item.title.split(" ").slice(0,2).join(" ") + ' #' + item.num + '</strong><small>Easy</small></div></a>';
+      }
+      grid.innerHTML = html;
+    })();
+  </script>
+</body>
+</html>
